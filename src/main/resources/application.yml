@@ -1,1 +1,14 @@
-
+spring:
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+security:
+  jwt:
+    secret-key: dD_HjcF4ZoXwMj6Ov7q7uDqCZLeNMhOwC52WEGEG7P0 # helloworld
+    accesstoken:
+      expire-time: 180000
